@@ -3,6 +3,9 @@ on:
   push:
     tags:
       - '*'
+permissions:
+  contents: write # GitHub release
+
 jobs:
   release:
     runs-on: ubuntu-latest
